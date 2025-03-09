@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Bites | Modern Fast Food</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Ubuntu Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa fa-star brand-icon"></i> Tasty Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fa fa-home"></i>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fa fa-cutlery"></i> Menu</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fa fa-picture-o"></i>
+                            Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservations.html"><i
+                                class="fa fa-calendar"></i> Reservations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fa fa-rss"></i> Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <img src="images/hero-plate.png" alt="Elegant dish" class="hero-plate">
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="hero-icon">
+                        <i class="fa fa-cutlery"></i>
+                    </div>
+                    <h1><span class="highlight">Experience</span> Fine Dining at Its Best</h1>
+                    <p><i class="fa fa-star"></i> Indulge in a culinary journey where every dish tells a story. Our
+                        expert chefs craft exquisite meals using the finest ingredients.</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fa fa-trophy"></i>
+                            <span>Multiple Award Winner</span>
+                            <p>Recognized for culinary excellence</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-leaf"></i>
+                            <span>Fresh Ingredients</span>
+                            <p>Farm-to-table organic produce</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-user-md"></i>
+                            <span>Expert Chefs</span>
+                            <p>Internationally trained culinary team</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="reservations.html" class="btn btn-primary">
+                            <i class="fa fa-calendar"></i> Make a Reservation
+                        </a>
+                        <a href="menu.html" class="btn btn-outline-light">
+                            <i class="fa fa-book"></i> View Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up"><i class="fa fa-cutlery"></i> Our Popular Menu</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3"
+                            alt="Burger">
+                        <h3>Classic Burger</h3>
+                        <p>Premium beef patty with fresh vegetables</p>
+                        <span class="price">$8.99</span>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-4.0.3"
+                            alt="Pizza">
+                        <h3>Supreme Pizza</h3>
+                        <p>Loaded with premium toppings</p>
+                        <span class="price">$12.99</span>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?ixlib=rb-4.0.3"
+                            alt="Fries">
+                        <h3>Loaded Fries</h3>
+                        <p>Crispy fries with special sauce</p>
+                        <span class="price">$5.99</span>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3" alt="Restaurant"
+                        class="img-fluid">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2><i class="fa fa-info-circle"></i> About Us</h2>
+                    <p>We're passionate about serving the best fast food in town. Our ingredients are fresh, and our
+                        recipes are crafted to perfection.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fa fa-clock-o"></i>
+                            <span>Fast Delivery</span>
+                            <p>30-minute delivery guarantee</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-leaf"></i>
+                            <span>Fresh Ingredients</span>
+                            <p>Daily sourced local produce</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-star"></i>
+                            <span>Best Quality</span>
+                            <p>5-star rated dining experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up"><i class="fa fa-envelope"></i> Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <form>
+                        <div class="mb-3">
+                            <label><i class="fa fa-user"></i> Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label><i class="fa fa-envelope"></i> Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label><i class="fa fa-comment"></i> Message</label>
+                            <textarea class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send
+                            Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Get in Touch</h4>
+                        <div class="mb-3 contact-item">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="contact-text">
+                                <p>123 Dining Street, Foodville, FC 12345</p>
+                                <span>Visit our flagship restaurant</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 contact-item">
+                            <i class="fa fa-phone"></i>
+                            <div class="contact-text">
+                                <p>+1 (555) 123-4567</p>
+                                <span>Available 7 days a week</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 contact-item">
+                            <i class="fa fa-envelope"></i>
+                            <div class="contact-text">
+                                <p>info@tastybites.com</p>
+                                <span>24/7 customer support</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="social-link instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-link twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="social-link pinterest"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-info">
+                        <h3><i class="fa fa-cutlery"></i> Tasty Bites</h3>
+                        <p class="mt-3">Crafting unforgettable dining experiences with passion and creativity since
+                            2020.</p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-link facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="social-link instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-link twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="social-link pinterest"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-links">
+                        <h4><i class="fa fa-compass"></i> Quick Links</h4>
+                        <ul class="mt-3">
+                            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                            <li><a href="menu.html"><i class="fa fa-cutlery"></i> Menu</a></li>
+                            <li><a href="gallery.html"><i class="fa fa-picture-o"></i> Gallery</a></li>
+                            <li><a href="reservations.html"><i class="fa fa-calendar"></i> Reservations</a></li>
+                            <li><a href="blog.html"><i class="fa fa-rss"></i> Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li class="contact-phone">
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                <span>Mon-Fri: 9:00 AM - 10:00 PM</span>
+                            </li>
+                            <li class="contact-email">
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:info@tastybites.com">info@tastybites.com</a>
+                                <span>24/7 Online Support</span>
+                            </li>
+                            <li class="contact-address">
+                                <i class="fa fa-map-marker"></i>
+                                <a href="https://goo.gl/maps" target="_blank">123 Gourmet Street, Foodie City</a>
+                                <span>Visit Us Today</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="footer-bottom text-center">
+                <div class="footer-legal mb-3">
+                    <a href="#"><i class="fa fa-shield"></i> Privacy Policy</a>
+                    <a href="#"><i class="fa fa-file-text-o"></i> Terms of Service</a>
+                    <a href="#"><i class="fa fa-cookie"></i> Cookie Policy</a>
+                </div>
+                <p class="copyright"><i class="fa fa-copyright"></i> 2025 Tasty Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Navbar scroll animation
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

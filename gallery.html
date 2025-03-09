@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Tasty Bites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-utensils"></i> Tasty Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservations.html"><i class="fas fa-calendar-alt"></i> Reservations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up"><i class="fas fa-camera"></i> Our Gallery</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">A visual feast of our culinary creations</p>
+        </div>
+    </header>
+
+    <section class="gallery-categories py-5">
+        <div class="container">
+            <div class="category-tabs" data-aos="fade-up">
+                <button class="category-tab active" data-category="all"><i class="fas fa-th-large"></i> All</button>
+                <button class="category-tab" data-category="interior"><i class="fas fa-chair"></i> Interior</button>
+                <button class="category-tab" data-category="dishes"><i class="fas fa-utensils"></i> Dishes</button>
+                <button class="category-tab" data-category="events"><i class="fas fa-glass-cheers"></i> Events</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Interior Photos -->
+                <div class="gallery-item" data-category="interior" data-aos="fade-up">
+                    <a href="images/interior1.jpg" data-lightbox="gallery" data-title="Modern Dining Area">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h4>Modern Dining Area</h4>
+                        </div>
+                        <img src="images/interior1.jpg" alt="Modern Dining Area">
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="interior" data-aos="fade-up">
+                    <a href="images/interior2.jpg" data-lightbox="gallery" data-title="Cozy Corner">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h4>Cozy Corner</h4>
+                        </div>
+                        <img src="images/interior2.jpg" alt="Cozy Corner">
+                    </a>
+                </div>
+
+                <!-- Signature Dishes -->
+                <div class="gallery-item" data-category="dishes" data-aos="fade-up">
+                    <a href="images/dish1.jpg" data-lightbox="gallery" data-title="Signature Steak">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h4>Signature Steak</h4>
+                        </div>
+                        <img src="images/dish1.jpg" alt="Signature Steak">
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="dishes" data-aos="fade-up">
+                    <a href="images/dish2.jpg" data-lightbox="gallery" data-title="Seafood Platter">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h4>Seafood Platter</h4>
+                        </div>
+                        <img src="images/dish2.jpg" alt="Seafood Platter">
+                    </a>
+                </div>
+
+                <!-- Events -->
+                <div class="gallery-item" data-category="events" data-aos="fade-up">
+                    <a href="images/event1.jpg" data-lightbox="gallery" data-title="Wedding Reception">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h4>Wedding Reception</h4>
+                        </div>
+                        <img src="images/event1.jpg" alt="Wedding Reception">
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="events" data-aos="fade-up">
+                    <a href="images/event2.jpg" data-lightbox="gallery" data-title="Corporate Event">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h4>Corporate Event</h4>
+                        </div>
+                        <img src="images/event2.jpg" alt="Corporate Event">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-info py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <i class="fas fa-camera-retro fa-3x mb-3"></i>
+                    <h3>Professional Photos</h3>
+                    <p>All photos are taken by professional food photographers</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-share-alt fa-3x mb-3"></i>
+                    <h3>Share & Tag</h3>
+                    <p>Share your dining experience with #TastyBites</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-calendar-check fa-3x mb-3"></i>
+                    <h3>Updated Weekly</h3>
+                    <p>New photos added every week</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram-feed py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up"><i class="fab fa-instagram"></i> Follow Us on Instagram</h2>
+            <p class="text-center mb-5" data-aos="fade-up">@tastybites_restaurant</p>
+            <div class="row">
+                <div class="col-6 col-md-3" data-aos="fade-up">
+                    <a href="#" class="instagram-item">
+                        <i class="fas fa-heart"></i>
+                        <img src="images/insta1.jpg" alt="Instagram Post">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#" class="instagram-item">
+                        <i class="fas fa-heart"></i>
+                        <img src="images/insta2.jpg" alt="Instagram Post">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#" class="instagram-item">
+                        <i class="fas fa-heart"></i>
+                        <img src="images/insta3.jpg" alt="Instagram Post">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#" class="instagram-item">
+                        <i class="fas fa-heart"></i>
+                        <img src="images/insta4.jpg" alt="Instagram Post">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-info">
+                        <h3><i class="fas fa-utensils"></i> Tasty Bites</h3>
+                        <p class="mt-3">Crafting unforgettable dining experiences with passion and creativity since 2020.</p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-links">
+                        <h4><i class="fas fa-compass"></i> Quick Links</h4>
+                        <ul class="mt-3">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                            <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                            <li><a href="reservations.html"><i class="fas fa-calendar-alt"></i> Reservations</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h4><i class="fas fa-envelope"></i> Contact Us</h4>
+                        <ul class="mt-3">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Dining Street, Foodville, FC 12345</li>
+                            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@tastybites.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Sun: 11:00 AM - 11:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="footer-bottom text-center">
+                <div class="footer-legal mb-3">
+                    <a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                    <a href="#"><i class="fas fa-file-contract"></i> Terms of Service</a>
+                    <a href="#"><i class="fas fa-cookie-bite"></i> Cookie Policy</a>
+                </div>
+                <p class="copyright"><i class="far fa-copyright"></i> 2025 Tasty Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
